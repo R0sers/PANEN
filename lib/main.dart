@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'screens/catatan_screen.dart';
-import 'screens/edukasi_screen.dart';
+import 'screens/tentang_screen.dart';
 import 'screens/home_screen.dart';
 import 'theme/app_theme.dart';
 
@@ -14,7 +14,7 @@ class PanenApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'PANEN',
-      debugShowCheckedModeBanner: true,
+      debugShowCheckedModeBanner: false,
       theme: AppTheme.light,
       home: const MainShell(),
     );
@@ -54,9 +54,9 @@ class _MainShellState extends State<MainShell> {
               selectedIcon: Icon(Icons.book),
               label: 'Catatan'),
           NavigationDestination(
-              icon: Icon(Icons.school_outlined),
-              selectedIcon: Icon(Icons.school),
-              label: 'Edukasi'),
+              icon: Icon(Icons.people_outlined),
+              selectedIcon: Icon(Icons.people),
+              label: 'Tentang'),
         ],
       ),
     );

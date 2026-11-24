@@ -32,16 +32,11 @@ class HomeScreen extends StatelessWidget {
             child: const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('PANEN',
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 30,
-                        fontWeight: FontWeight.w800,
-                        letterSpacing: 4)),
-                SizedBox(height: 4),
-                Text('Platform Agrikultur Nusantara, Edukasi & Nafkah',
+                Image(image: AssetImage('assets/image/logo.png'), width: 100,),
+                SizedBox(height: 6),
+                Text('Platform Agrikultur Nusantara Edukasi Niaga',
                     style: TextStyle(color: Colors.white70, fontSize: 12)),
-                SizedBox(height: 20),
+                SizedBox(height: 10),
                 Text('Sugeng rawuh, Juragan!',
                     style: TextStyle(
                         color: Colors.white,
